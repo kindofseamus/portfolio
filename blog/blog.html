@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="css/styles.css" rel="stylesheet">
+      <title>Séamus Andersen | Blog</title>
+   </head>
+   <body>
+      <!--  Header  -->
+      <header class="page-header">
+         <nav>
+            <ul class="nav-links">
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="">Blog</a></li>
+            </ul>
+         </nav>
+      </header>
+      <!--  Main Content  -->
+      <main>
+         <article id="Lume">
+            <header class="article-header">
+               <h2>Lume, Realm of Lumithar</h2>
+            </header>
+            <div class="article-content hidden">
+               <h3>Introduction</h3>
+               <p>Lume is a realm of divided wonder. The land encompasses a singular vast continent surrounded by an unsurpassable mountain range that defies exploration, extending endlessly upwards and outwards to those who dare to climb. This world is segmented into four distinct regions: the perpetually spring-like Blooming Burrow, the artistically vibrant and eternally summery Radiant Reach, the foraging-centric and autumnal Harvest Haven, and the wintry, mine-entrenched Frostfall Fields. Magic weaves through Lume, a common sight amongst the nobility, yet a rare and costly privilege for the common folk.</p>
+               <p>The true origins of Lume are unknown to its current inhabitants, but it is said to have been brought into existence by the god of collectors, Lumithar. After the land’s initial creation by Lumithar, the god has been noticeably more absent. This absence has given the people of Lume a chance to develop their own cultures and legacies. Though the randomness of Lumithar’s initial population has led to a world where one’s birthplace shapes their identity, destiny, and allegiance.</p>
+               <p>According to legend, when Lume was first populated it was done by the hands of Lumithar himself. Lumithar took the first generation of Lumarians from their homelands and placed them into this world. Over time, more and more people were dropped into the world, seeming to appear in random locations across the four regions. As the lands were quickly populated, factions formed in suit. </p>
+               <p>Travel in Lume is primarily equine/oxen based with the more extravagant methods, such as the teleportation circles between capitals, being reserved for the guild and those with wealth. Radiant Reach, hosting the Mystique Market, stands as a beacon for many travelers. This hub of trade attracts many different vendors from all across Lume.</p>
+               <p>Each of Lume’s regions is defined not just by its unique environmental and societal characteristics but also by a color that captures its essence: light green for Blooming Burrow, golden yellow for Radiant Reach, red for Harvest Haven, and icy blue for Frostfall Fields. These colors, worn with pride by the inhabitants, are a constant display of regional identity and unity, weaving a visual mosaic of Lume’s diverse yet interconnected society. In Lume, where magic dances in the air and danger lurks in the shadows, the vibrancy of life is matched only by the complexity of its peoples and the beauty of its lands.</p>
+            <footer class="article-footer">
+               <p>Sound interesting? <a href="https://fuzzy-beanie-c0a.notion.site/Lume-Realm-of-Lumithar-f828574d561e45589cdf03a70d2f1f55" target="_blank" rel="noopener noreferrer">Click here to learn more!</a></p>
+            </footer>
+            </div>
+         </article>
+         <article id="Velmear">
+            <header class="article-header">
+               <h2>The Seas of Velmear</h2>
+            </header>
+            <div class="article-content hidden">
+               <h3>Introduction</h3>
+               <p>Long ago, Isle Velmear rose as a bastion of hope, trade, and civilization in a chaotic sea. Governed by a once-proud body known as the Velmearan Council, it was founded with the dream of uniting the surrounding isles under a single banner. That dream has weathered storms both literal and political, and now lies frayed at the edges.</p>
+               <p>Today, Isle Velmear remains the heart of commerce, law, and relative safety, but it is also alone. Stretched thin and weary from decades of conflict, the Council has withdrawn its reach to the central island and now leaves the surrounding seas to rot under pirate rule. The outlying islands, rich in resources, secrets, and danger, have become the domain of ruthless pirate lords, monstrous threats, and the unpredictable wrath of nature and magic alike.</p>
+               <footer class="article-footer">
+                  <p>Sound interesting? <a href="https://fuzzy-beanie-c0a.notion.site/The-Seas-of-Velmear-1a7d81cc950c80b29ea5d0fc85502ffd" target="_blank" rel="noopener noreferrer">Click here to learn more!</a></p>
+               </footer>
+            </div>
+         </article>
+      </main>
+      <!--  Footer  -->
+      <footer>
+         <p>Though all the writings and tools are compatible with 5E, this site is not affiliated with, endorsed, sponsored, or specifically approved by Wizards of the Coast LLC.</p>
+      </footer>
+      <!--  Toggleable article script  -->
+      <script>
+         document.querySelectorAll('.article-header').forEach(header => {
+            header.addEventListener('click', () => {
+               const content = header.nextElementSibling;
+               if (content.classList.contains('article-content')) { 
+                  content.classList.toggle('hidden');
+               }
+            });
+         });
+      </script>
+   </body>
+</html>
